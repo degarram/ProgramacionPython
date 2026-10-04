@@ -1,7 +1,7 @@
 # Proyecto: Generador de ticket de compra
-# Autores: David García Ramírez y Jesus Herrera Bailon
+# Autores: David García Ramírez y Jesús Herrera Bailon
 
-# Declaración de la constante IVA.
+# Declaración de las constantes.
 NOMBRE_TIENDA = "VP MARKET 24H"
 IVA = 0.21
 IVA_REDUCIDO = 0.04
@@ -13,9 +13,12 @@ nombre_cliente = input("Introduce tu nombre: ")
 nombre_producto = input("Introduce el nombre del producto: ")
 precio_unidad = float(input("Introduce el precio por unidad: "))
 cantidad = int(input("Introduce la cantidad de unidades comprada del producto: "))
-porcentaje_descuento = float(input("Introduce el porcentaje de descuento (si no tiene pon 0): "))
+porcentaje_descuento = float(input("Introduce el porcentaje de descuento (si no tiene ponga 0): "))
 gastos_envio = float(input("Introduzca los gastos de envío si hubiera (si no, ponga 0): "))
-fecha = input("Introduce el día de la compra: ") + " " + input("Introduce el mes de la compra: ") + " " + input("Introduce el año de la compra: ")
+anno = input("Introduce el año de la compra: ")
+mes = input("Introduce el mes de la compra: ")
+dia = input("Introduce el día de la compra: ")
+fecha = dia + "/" + mes + "/" + anno
 
 # Comprobación de tipos
 print(f"""
