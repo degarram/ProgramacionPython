@@ -1,0 +1,21 @@
+# Normalización automática de saltos de línea para todos los archivos de texto
+* text=auto
+
+# Definir explícitamente los archivos Python y mejorar su visualización de diferencias
+*.py    text diff=python
+*.pyw   text diff=python
+
+# Tratar los archivos compilados de Python como binarios para evitar conflictos
+*.pyc   binary
+*.pyo   binary
+*.pyd   binary
+
+# Archivos de dependencias y configuración de entorno
+requirements.txt text
+.env             text
+
+# Excluir cachés y entornos virtuales al usar 'git archive' (empaquetar el repo)
+__pycache__/    export-ignore
+.venv/          export-ignore
+venv/           export-ignore
+env/            export-ignore
